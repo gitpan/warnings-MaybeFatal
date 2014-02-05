@@ -6,6 +6,16 @@ Home page:    <https://metacpan.org/release/warnings-MaybeFatal>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=warnings-MaybeFatal>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.003	2014-02-05
+
+ [ Test Suite ]
+ - Test that a module using warnings::MaybeFatal is able to load another
+   module using warnings::MaybeFatal. (This test fails on Perl < 5.8.4.)
+   Graham Knop++
+
+ [ Other ]
+ - Raise Perl version dependency from 5.8.1 to 5.8.4.
+
 0.002	2014-02-05
 
  - Depend on Lexical::SealRequireHints for Perl 5.8.x and 5.10.x.

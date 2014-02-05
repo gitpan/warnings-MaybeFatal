@@ -14,6 +14,9 @@ dist.ini
 doap.ttl
 lib/warnings/MaybeFatal.pm
 t/01basic.t
+t/02indirect.t
+t/lib/LoadsThisShouldDie.pm
+t/lib/LoadsThisShouldWarn.pm
 t/lib/ThisShouldDie.pm
 t/lib/ThisShouldDieToo.pm
 t/lib/ThisShouldWarn.pm

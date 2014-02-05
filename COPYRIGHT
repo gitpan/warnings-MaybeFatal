@@ -8,10 +8,19 @@ Files: Changes
  META.yml
  dist.ini
  doap.ttl
+ t/lib/LoadsThisShouldDie.pm
+ t/lib/LoadsThisShouldWarn.pm
  t/lib/ThisShouldDie.pm
  t/lib/ThisShouldDieToo.pm
  t/lib/ThisShouldWarn.pm
 Copyright: Copyright 2014 Toby Inkster.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: README
+ lib/warnings/MaybeFatal.pm
+ t/01basic.t
+ t/02indirect.t
+Copyright: This software is copyright (c) 2014 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
 Files: CONTRIBUTING
@@ -20,12 +29,6 @@ Files: CONTRIBUTING
  Makefile.PL
 Copyright: Unknown
 License: Unknown
-
-Files: README
- lib/warnings/MaybeFatal.pm
- t/01basic.t
-Copyright: This software is copyright (c) 2014 by Toby Inkster.
-License: GPL-1.0+ or Artistic-1.0
 
 Files: COPYRIGHT
  CREDITS

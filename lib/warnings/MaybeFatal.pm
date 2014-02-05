@@ -1,11 +1,11 @@
-use 5.008001;
+use 5.008004;
 use strict;
 use warnings;
 
 package warnings::MaybeFatal;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 
 BEGIN {
 	if ( $] < 5.012 ) {

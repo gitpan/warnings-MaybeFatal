@@ -19,13 +19,13 @@ my $meta = {
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
                         develop   => { recommends => { "Dist::Inkt" => 0.001 } },
-                        runtime   => { requires => { "B::Hooks::EndOfScope" => 0, "perl" => 5.008001 } },
+                        runtime   => { requires => { "B::Hooks::EndOfScope" => 0, "perl" => 5.008004 } },
                         test      => {
                                        requires => { "Test::Fatal" => 0, "Test::More" => 0.96, "Test::Warnings" => 0 },
                                      },
                       },
   "provides"       => {
-                        "warnings::MaybeFatal" => { file => "lib/warnings/MaybeFatal.pm", version => 0.002 },
+                        "warnings::MaybeFatal" => { file => "lib/warnings/MaybeFatal.pm", version => 0.003 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -40,7 +40,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/warnings-MaybeFatal/project",
                       },
-  "version"        => 0.002,
+  "version"        => 0.003,
 };
 
 my %dynamic_config;

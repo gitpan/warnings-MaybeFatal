@@ -38,7 +38,7 @@
       "runtime" : {
          "requires" : {
             "B::Hooks::EndOfScope" : "0",
-            "perl" : "5.008003"
+            "perl" : "5.008001"
          }
       },
       "test" : {
@@ -52,7 +52,7 @@
    "provides" : {
       "warnings::MaybeFatal" : {
          "file" : "lib/warnings/MaybeFatal.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -70,5 +70,5 @@
          "web" : "https://github.com/tobyink/p5-warnings-maybefatal"
       }
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }

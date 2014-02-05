@@ -19,13 +19,13 @@ my $meta = {
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
                         develop   => { recommends => { "Dist::Inkt" => 0.001 } },
-                        runtime   => { requires => { "B::Hooks::EndOfScope" => 0, "perl" => 5.008003 } },
+                        runtime   => { requires => { "B::Hooks::EndOfScope" => 0, "perl" => 5.008001 } },
                         test      => {
                                        requires => { "Test::Fatal" => 0, "Test::More" => 0.96, "Test::Warnings" => 0 },
                                      },
                       },
   "provides"       => {
-                        "warnings::MaybeFatal" => { file => "lib/warnings/MaybeFatal.pm", version => 0.001 },
+                        "warnings::MaybeFatal" => { file => "lib/warnings/MaybeFatal.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -40,24 +40,14 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/warnings-MaybeFatal/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;
 do {
-if ( $] < 5.010 )
+if ( $] < 5.012 )
 {
-	warn <<'WARNING';
-**
-** You're going to need Devel::Pragma. Unfortunately, the latest release
-** of Devel::Pragma only works on Perl 5.12 and above. You need to get a
-** really old version from BackPAN.
-**
-** http://cpan.metacpan.org/authors/id/C/CH/CHOCOLATE/Devel-Pragma-0.54.tar.gz
-**
-WARNING
-	
-	$meta->{prereqs}{runtime}{requires}{'Devel::Pragma'} = '0.54';
+	$meta->{prereqs}{runtime}{requires}{'Lexical::SealRequireHints'} = '0.007';
 }
 
 };

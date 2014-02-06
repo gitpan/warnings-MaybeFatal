@@ -52,7 +52,7 @@
    "provides" : {
       "warnings::MaybeFatal" : {
          "file" : "lib/warnings/MaybeFatal.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       }
    },
    "release_status" : "stable",
@@ -70,5 +70,5 @@
          "web" : "https://github.com/tobyink/p5-warnings-maybefatal"
       }
    },
-   "version" : "0.003"
+   "version" : "0.004"
 }

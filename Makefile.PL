@@ -25,7 +25,7 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "warnings::MaybeFatal" => { file => "lib/warnings/MaybeFatal.pm", version => 0.003 },
+                        "warnings::MaybeFatal" => { file => "lib/warnings/MaybeFatal.pm", version => 0.004 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -40,7 +40,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/warnings-MaybeFatal/project",
                       },
-  "version"        => 0.003,
+  "version"        => 0.004,
 };
 
 my %dynamic_config;
